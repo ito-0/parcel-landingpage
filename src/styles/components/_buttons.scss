@@ -1,0 +1,31 @@
+@use '../variables';
+
+.button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 100px;
+
+    &--primary {
+        background: linear-gradient(135deg, variables.$buttonBg1, variables.$buttonBg2);
+        color: variables.$textBranco1;
+    }
+
+    @media (max-width: 640px) {
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+        &__infos {
+            display: block;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+    }
+}

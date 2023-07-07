@@ -1,11 +1,16 @@
 @use 'hero';
+@use 'components/infos_bar';
+@use 'components/buttons';
+@use 'event';
+@use 'variables';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
-    color: #fff;
+    color: variables.$textBranco1;
+    list-style: none;
 }
 
 .container {
@@ -23,5 +28,24 @@
 }
 
 body {
-    background-color: rgb(0, 255, 149);
+    background-color: variables.$mainBody1;
+    animation: plantGrowth 10s infinite;
+}
+
+@keyframes plantGrowth {
+    0% {
+        background-color: variables.$mainBody1;
+    }
+    25% {
+        background-color: variables.$mainBody2;
+    }
+    50% {
+        background-color: variables.$mainBody3;
+    }
+    75% {
+        background-color: variables.$mainBody2;
+    }
+    100% {
+        background-color: variables.$mainBody1;
+    }
 }

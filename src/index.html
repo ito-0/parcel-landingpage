@@ -8,17 +8,107 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/go-green-logo.png" alt="Go Green">
             <p class="hero__text">
-                Um dos maiores eventos de tecnologia sustentável no mundo
+                Um dos maiores eventos de tecnologia sustentável no mundo vai começar! </br>
+                <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Termas de Jurema - Iretama, PR
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 1200,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        12/12/2024 até 14/12/2024
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta sua vaga
+                </a>
+            </div>
         </div>
+        <div class="hero__backg"></div>
     </header>
 
+    <section class="event event--carregador">
+        <div class="container" data-aos="zoom-in">
+            <div class="event__details">
+                <h2 class="event__details__title">Carregador Solar</h2>
+                <p class="event__details__desciption">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At, distinctio officia esse, omnis blanditiis suscipit recusandae laudantium voluptatem tempore corrupti sunt sapiente commodi! Reprehenderit sunt nobis quae exercitationem repellendus laudantium?
+                </p>
+            </div>
+            <img class="event__image" src="./images/event-phone-solar.png" alt="Telefone Solar">
+        </div>
+    </section>
+    <section class="event event--tower-park event--image-left">
+        <div class="container" data-aos="zoom-in">
+            <div class="event__details">
+                <h2 class="event__details__title">Tower Park</h2>
+                <p class="event__details__desciption">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At, distinctio officia esse, omnis blanditiis suscipit recusandae laudantium voluptatem tempore corrupti sunt sapiente commodi! Reprehenderit sunt nobis quae exercitationem repellendus laudantium?
+                </p>
+                <div class="animation"></div>
+            </div>
+            <img class="event__image" src="./images/event-tower-park.jpg" alt="Tower Park">
+        </div>
+    </section>
+    <section class="event event--placas-fotov">
+        <div class="container" data-aos="zoom-in">
+            <div class="event__details">
+                <h2 class="event__details__title">Placas Fotovoltaicas</h2>
+                <p class="event__details__desciption">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At, distinctio officia esse, omnis blanditiis suscipit recusandae laudantium voluptatem tempore corrupti sunt sapiente commodi! Reprehenderit sunt nobis quae exercitationem repellendus laudantium?
+                </p>
+            </div>
+            <img class="event__image" src="./images/event-photovoltaic.jpg" alt="Placas Fotovoltaicas">
+        </div>
+    </section>
+    <section class="event event--drones event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Drones</h2>
+                <p class="event__details__desciption">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At, distinctio officia esse, omnis blanditiis suscipit recusandae laudantium voluptatem tempore corrupti sunt sapiente commodi! Reprehenderit sunt nobis quae exercitationem repellendus laudantium?
+                </p>
+            </div>
+            <img class="event__image" src="./images/event-drones.jpg" alt="Zangão">
+        </div>
+    </section>
+    <section class="event event--inova">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Inovações</h2>
+                <p class="event__details__desciption">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At, distinctio officia esse, omnis blanditiis suscipit recusandae laudantium voluptatem tempore corrupti sunt sapiente commodi! Reprehenderit sunt nobis quae exercitationem repellendus laudantium?
+                </p>
+            </div>
+            <img class="event__image" src="./images/event-details-city-1280x853.jpg" alt="Green City">
+        </div>
+    </section>
+    <section class="event event--recursos event--image-left">
+        <div class="container" data-aos="fade-up">
+            <div class="event__details">
+                <h2 class="event__details__title">Nossos recursos</h2>
+                <p class="event__details__desciption">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At, distinctio officia esse, omnis blanditiis suscipit recusandae laudantium voluptatem tempore corrupti sunt sapiente commodi! Reprehenderit sunt nobis quae exercitationem repellendus laudantium?
+                </p>
+            </div>
+            <img class="event__image" src="./images/event-det-desc-icons.png" alt="Recursos">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
