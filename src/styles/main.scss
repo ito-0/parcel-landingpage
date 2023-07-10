@@ -30,6 +30,7 @@
 body {
     background-color: variables.$mainBody1;
     animation: plantGrowth 10s infinite;
+    overflow-x: hidden;
 }
 
 @keyframes plantGrowth {
